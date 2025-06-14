@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Café y Viajes</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .contacto-container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2.5rem;
+            background-color: var(--color-blanco-calido);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            text-align: center; /* Centra el texto introductorio */
+        }
+        .contacto-container h2 {
+            font-size: 2.5em;
+            margin-bottom: 1rem;
+        }
+        .contacto-container p {
+            font-size: 1.1em;
+            margin-bottom: 2rem;
+            line-height: 1.7;
+        }
+        /* Hacemos que el formulario se alinee a la izquierda dentro del contenedor centrado */
+        .contacto-container form {
+            text-align: left; 
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="logo.png" alt="Logo de Café y Viajes" class="logo">
+        <h1><a href="index.html" style="color: inherit;">Café y Viajes</a></h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html#inicio">Inicio</a></li>
+            <li><a href="index.html#articulos">Artículos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="contacto-container">
+            <h2>Hablemos de Café</h2>
+            <p>¿Tenés una pregunta, una sugerencia para un nuevo artículo o simplemente querés compartir tu pasión por el café y los viajes? ¡Este es el lugar! Completá el formulario y me pondré en contacto con vos tan pronto como sea posible.</p>
+            
+            <form action="#" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="tipo-cafe">¿Cuál es tu método preferido?</label>
+                <select id="tipo-cafe" name="tipo-cafe">
+                    <option value="espresso">Espresso</option>
+                    <option value="filtrado">Café Filtrado</option>
+                    <option value="prensa">Prensa Francesa</option>
+                    <option value="cold-brew">Cold Brew</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+                <label for="mensaje">Tu Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="social-media">
+            <a href="#" target="_blank"><img src="iconos/instagram.png" alt="Ícono de Instagram"></a>
+            <a href="#" target="_blank"><img src="iconos/linkedin.png" alt="Ícono de LinkedIn"></a>
+        </div>
+        <p>&copy; 2025 Café y Viajes. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

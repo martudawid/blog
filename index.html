@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café y Viajes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <!-- Logo actualizado con la imagen que subiste -->
+        <img src="logo.png" alt="Logo de Café y Viajes" class="logo">
+        <h1>Café y Viajes</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#articulos">Artículos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+             </ul>
+    </nav>
+
+    <main id="inicio">
+        <div class="main-container">
+
+            <section id="articulos">
+                <h2>Mis Publicaciones</h2>
+                <div class="articulos-container">
+                    <article>
+                        <img src="images/viaje1.jpg" alt="Cafetería en las calles de París">
+                        <h3>Cafeterías en París que no te podés perder</h3>
+                        <p>La capital francesa se extiende más allá de sus célebres monumentos. Para el conocedor del café, París representa un destino ineludible. Sugerimos una visita a Strada Café...</p>
+                        <time datetime="2025-06-05">05 de Junio, 2025</time>
+                        <a href="articulo-paris.html" class="leer-mas-btn">Leer Más</a>
+                    </article>
+                    <article>
+                        <img src="images/viaje2.jpg" alt="Granos de café antiguos y un mapa del mundo">
+                        <h3>Una breve historia del café</h3>
+                        <p>El origen del café se remonta, según la tradición, a un pastor de Etiopía de nombre Kaldi. Su cultivo y consumo se diseminaron desde África hacia la península arábiga...</p>
+                        <time datetime="2025-05-28">28 de Mayo, 2025</time>
+                        <a href="articulo-historia.html" class="leer-mas-btn">Leer Más</a>
+                    </article>
+                    <article>
+                        <img src="images/viaje3.jpg" alt="Vista de la ciudad de Melbourne con un café en primer plano">
+                        <h3>Ciudades del mundo para amantes del café</h3>
+                        <p>Diversas metrópolis globales se distinguen por su arraigada cultura cafetera. Melbourne, en Australia, ostenta el título de capital mundial del café de especialidad...</p>
+                        <time datetime="2025-05-20">20 de Mayo, 2025</time>
+                        <a href="articulo-ciudades.html" class="leer-mas-btn">Leer Más</a>
+                    </article>
+                    <article>
+                        <img src="images/viaje4.jpg" alt="Paisaje de los cafetales en Colombia">
+                        <h3>El corazón cafetero: Colombia y Bolivia</h3>
+                        <p>América Latina se posiciona como una región fundamental en la producción mundial de café. Colombia es célebre por su "Eje Cafetero", zona que invita a explorar fincas...</p>
+                        <time datetime="2025-05-12">12 de Mayo, 2025</time>
+                        <a href="articulo-latam.html" class="leer-mas-btn">Leer Más</a>
+                    </article>
+                    <article>
+                        <img src="images/viaje5.jpg" alt="Una cafetera de prensa francesa y otros métodos de extracción de café">
+                        <h3>El arte de preparar café en casa</h3>
+                        <p>La preparación de un café de alta calidad no es una práctica exclusiva de baristas. Métodos de extracción domésticos, como la Prensa Francesa, permiten obtener una bebida...</p>
+                        <time datetime="2025-05-02">02 de Mayo, 2025</time>
+                        <a href="articulo-casa.html" class="leer-mas-btn">Leer Más</a>
+                    </article>
+                </div>
+            </section>
+
+            <aside class="sidebar">
+                <div id="contacto" class="formulario-seccion">
+                    <h3>Hablemos de Café</h3>
+                    <p>¿Tenés alguna duda o sugerencia? ¡Escribime!</p>
+                    <form action="#" method="POST">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="tipo-cafe">¿Cuál es tu método preferido?</label>
+                        <select id="tipo-cafe" name="tipo-cafe">
+                            <option value="espresso">Espresso</option>
+                            <option value="filtrado">Café Filtrado</option>
+                            <option value="prensa">Prensa Francesa</option>
+                            <option value="cold-brew">Cold Brew</option>
+                        </select>
+
+                        <label for="mensaje">Tu Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </aside>
+
+        </div>
+    </main>
+    <footer>
+        <div class="social-media">
+            <!-- Rutas de iconos sociales restauradas a las originales -->
+            <a href="#" target="_blank"><img src="iconos/instagram.png" alt="Ícono de Instagram"></a>
+            <a href="#" target="_blank"><img src="iconos/linkedin.png" alt="Ícono de LinkedIn"></a>
+        </div>
+        <p>&copy; 2025 Café y Viajes. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
